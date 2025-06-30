@@ -1,1 +1,0 @@
-execute unless predicate repo:holding_carrot_on_stick run scoreboard players reset @s repo.timer
