@@ -1,0 +1,1 @@
+execute as @e[tag=repo.held_by] run function repo:input/check_all_holders_distance

@@ -1,0 +1,1 @@
+execute as @a if score @s repo.temp = @e[tag=repo.object,limit=1,sort=nearest] repo.holder run function repo:input/drop_object

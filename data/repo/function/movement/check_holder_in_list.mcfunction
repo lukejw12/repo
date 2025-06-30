@@ -1,0 +1,1 @@
+$execute if data entity @s {}.holders[{value:$(check_holder)}] run function repo:movement/add_player_to_center

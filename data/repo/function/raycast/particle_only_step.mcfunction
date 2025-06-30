@@ -1,3 +1,4 @@
+execute unless block ~ ~ ~ #repo:passable run return 0
 
 particle minecraft:wax_on ^ ^ ^2 0 0 0 0 0
 

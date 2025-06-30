@@ -1,0 +1,1 @@
+$data modify entity @s {}.holders append value $(new_holder)
