@@ -1,0 +1,1 @@
+$data modify entity @s CustomName set value [{"text":"Extraction Zone ","color":"gold","bold":true},{"text":"$(collected)","color":"yellow"},{"text":"/","color":"white"},{"text":"$(quota)","color":"white"},{"text":" (","color":"gray"},{"text":"$(percentage)","color":"green"},{"text":"%)","color":"gray"}]

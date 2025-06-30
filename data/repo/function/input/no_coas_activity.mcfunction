@@ -1,0 +1,1 @@
+scoreboard players set @s repo.timer 0

@@ -1,0 +1,2 @@
+execute store result score @s repo.temp2 run data get entity @s UUID[0]
+execute as @e[tag=repo.click_detector] if score @s repo.holder = @p repo.temp2 at @p anchored eyes positioned ^ ^ ^1 run tp @s ~ ~1.1 ~
