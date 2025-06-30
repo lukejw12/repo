@@ -1,6 +1,6 @@
 execute unless block ~ ~ ~ #repo:passable run return 0
 
-execute as @e[tag=repo.object,tag=!repo.held_by,distance=..1,sort=nearest] run function repo:pickup/attempt_pickup_normal
+execute as @e[tag=repo.object,distance=..1,sort=nearest] run function repo:pickup/attempt_pickup_normal
 
 execute if entity @s[tag=repo.holding] run particle minecraft:wax_on ^ ^ ^2 0 0 0 0 0
 

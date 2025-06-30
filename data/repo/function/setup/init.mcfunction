@@ -49,6 +49,9 @@ scoreboard objectives add repo.center_y dummy
 scoreboard objectives add repo.center_z dummy
 scoreboard objectives add repo.is_holding_this dummy
 scoreboard objectives add repo.player_strength dummy
+scoreboard objectives add repo.movement_cooldown dummy
+scoreboard objectives add repo.last_tick dummy
+scoreboard objectives add repo.current_tick dummy
 
 scoreboard players set #10000 repo.temp 10000
 scoreboard players set #3 repo.temp 3
@@ -57,4 +60,33 @@ scoreboard players set @a repo.strength 15
 scoreboard players set #100 repo.temp 100
 scoreboard players set #1000 repo.temp 1000
 
+scoreboard objectives add repo.current_player_uuid dummy
+scoreboard objectives add repo.check_uuid dummy
+scoreboard objectives add repo.endpoint_x dummy
+scoreboard objectives add repo.endpoint_y dummy
+scoreboard objectives add repo.endpoint_z dummy
+scoreboard objectives add repo.p1_pos_x dummy
+scoreboard objectives add repo.p1_pos_y dummy
+scoreboard objectives add repo.p1_pos_z dummy
+scoreboard objectives add repo.p1_endpoint_x dummy
+scoreboard objectives add repo.p1_endpoint_y dummy
+scoreboard objectives add repo.p1_endpoint_z dummy
+scoreboard objectives add repo.p2_pos_x dummy
+scoreboard objectives add repo.p2_pos_y dummy
+scoreboard objectives add repo.p2_pos_z dummy
+scoreboard objectives add repo.p2_endpoint_x dummy
+scoreboard objectives add repo.p2_endpoint_y dummy
+scoreboard objectives add repo.p2_endpoint_z dummy
+scoreboard objectives add repo.player2_start_y dummy
+scoreboard objectives add repo.player2_start_x dummy
+scoreboard objectives add repo.player2_start_z dummy
+scoreboard objectives add repo.player1_start_y dummy
+scoreboard objectives add repo.player1_start_x dummy
+scoreboard objectives add repo.player1_start_z dummy
+scoreboard objectives add repo.player2_end_y dummy
+scoreboard objectives add repo.player2_end_x dummy
+scoreboard objectives add repo.player2_end_z dummy
+scoreboard objectives add repo.player1_end_y dummy
+scoreboard objectives add repo.player1_end_x dummy
+scoreboard objectives add repo.player1_end_z dummy
 tellraw @a [{"text":"[R.E.P.O.] ","color":"gold","bold":true},{"text":"Multi-player datapack loaded! Put carrot on stick in OFFHAND and right-click to grab objects. Multiple players can now hold the same item!","color":"white","bold":false}]

@@ -9,3 +9,5 @@ execute as @e[tag=repo.held_by] run function repo:movement/follow_player
 execute as @e[tag=repo.object] run function repo:damage/check_collision
 execute as @e[tag=repo.damage_display] run function repo:damage/update_damage_timer
 execute as @e[tag=repo.object,scores={repo.damage_cooldown=1..}] run scoreboard players remove @s repo.damage_cooldown 1
+execute as @e[tag=repo.object] run scoreboard players remove @s repo.movement_cooldown 1
+execute as @e[tag=repo.object] if score @s repo.movement_cooldown matches ..-1 run scoreboard players set @s repo.movement_cooldown 0
