@@ -1,4 +1,3 @@
-tellraw @a [{"text":"DEBUG: ===== CALCULATING LINE CENTER =====","color":"dark_purple"}]
 
 execute store result score @s repo.player1_start_x run scoreboard players get @s repo.p1_pos_x
 execute store result score @s repo.player1_start_y run scoreboard players get @s repo.p1_pos_y
@@ -28,4 +27,3 @@ scoreboard players operation @s repo.center_z = @s repo.player1_start_z
 scoreboard players operation @s repo.center_z += @s repo.player2_start_z
 scoreboard players operation @s repo.center_z /= #2 repo.temp
 
-tellraw @a [{"text":"DEBUG: Line center calculated: "},{"score":{"name":"@s","objective":"repo.center_x"},"color":"green"},{"text":" "},{"score":{"name":"@s","objective":"repo.center_y"},"color":"green"},{"text":" "},{"score":{"name":"@s","objective":"repo.center_z"},"color":"green"}]

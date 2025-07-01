@@ -7,4 +7,3 @@ execute as @e[tag=repo.target_object] run data modify entity @s Invulnerable set
 
 execute store result score @s repo.temp run data get entity @s UUID[0]
 execute as @e[tag=repo.target_object,limit=1] run function repo:pickup/add_holder
-

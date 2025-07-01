@@ -1,0 +1,4 @@
+execute if score @s repo.holder = @a[tag=repo.current_player,limit=1] repo.temp2 run scoreboard players set @a[tag=repo.current_player,limit=1] repo.is_holder 1
+execute if score @s repo.holder_2 = @a[tag=repo.current_player,limit=1] repo.temp2 run scoreboard players set @a[tag=repo.current_player,limit=1] repo.is_holder 1
+execute if score @s repo.holder_3 = @a[tag=repo.current_player,limit=1] repo.temp2 run scoreboard players set @a[tag=repo.current_player,limit=1] repo.is_holder 1
+execute if score @s repo.holder_4 = @a[tag=repo.current_player,limit=1] repo.temp2 run scoreboard players set @a[tag=repo.current_player,limit=1] repo.is_holder 1

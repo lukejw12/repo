@@ -48,6 +48,7 @@ scoreboard objectives add repo.center_x dummy
 scoreboard objectives add repo.center_y dummy
 scoreboard objectives add repo.center_z dummy
 scoreboard objectives add repo.is_holding_this dummy
+scoreboard objectives add repo.is_holder dummy
 scoreboard objectives add repo.player_strength dummy
 scoreboard objectives add repo.movement_cooldown dummy
 scoreboard objectives add repo.last_tick dummy
@@ -89,4 +90,6 @@ scoreboard objectives add repo.player2_end_z dummy
 scoreboard objectives add repo.player1_end_y dummy
 scoreboard objectives add repo.player1_end_x dummy
 scoreboard objectives add repo.player1_end_z dummy
+scoreboard objectives add repo.already_holding dummy
+
 tellraw @a [{"text":"[R.E.P.O.] ","color":"gold","bold":true},{"text":"Multi-player datapack loaded! Put carrot on stick in OFFHAND and right-click to grab objects. Multiple players can now hold the same item!","color":"white","bold":false}]
