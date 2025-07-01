@@ -1,0 +1,2 @@
+$execute anchored eyes positioned ^ ^ ^$(distance) run particle minecraft:electric_spark ~ ~ ~ 0 0 0 0 1 force @a
+$execute anchored eyes positioned ^ ^ ^$(distance) run particle minecraft:wax_on ~ ~ ~ 0.02 0.02 0.02 0 1 force @a

@@ -54,6 +54,7 @@ scoreboard objectives add repo.movement_cooldown dummy
 scoreboard objectives add repo.last_tick dummy
 scoreboard objectives add repo.current_tick dummy
 
+scoreboard players set #60 repo.temp 60
 scoreboard players set #10000 repo.temp 10000
 scoreboard players set #3 repo.temp 3
 scoreboard players set #5 repo.temp 5
@@ -91,5 +92,98 @@ scoreboard objectives add repo.player1_end_y dummy
 scoreboard objectives add repo.player1_end_x dummy
 scoreboard objectives add repo.player1_end_z dummy
 scoreboard objectives add repo.already_holding dummy
+
+scoreboard objectives add repo.step_progress dummy
+scoreboard objectives add repo.progress dummy
+scoreboard objectives add repo.current_x dummy
+scoreboard objectives add repo.current_y dummy
+scoreboard objectives add repo.current_z dummy
+scoreboard objectives add repo.object_x dummy
+scoreboard objectives add repo.object_y dummy
+scoreboard objectives add repo.object_z dummy
+scoreboard objectives add repo.diff_x dummy
+scoreboard objectives add repo.diff_y dummy
+scoreboard objectives add repo.diff_z dummy
+scoreboard objectives add repo.curve_x dummy
+scoreboard objectives add repo.curve_y dummy
+scoreboard objectives add repo.curve_z dummy
+scoreboard objectives add repo.offset_x dummy
+scoreboard objectives add repo.offset_y dummy
+scoreboard objectives add repo.offset_z dummy
+scoreboard objectives add repo.curve_factor dummy
+scoreboard objectives add repo.player_x dummy
+scoreboard objectives add repo.player_y dummy
+scoreboard objectives add repo.player_z dummy
+scoreboard objectives add repo.item_x dummy
+scoreboard objectives add repo.item_y dummy
+scoreboard objectives add repo.item_z dummy
+scoreboard objectives add repo.lerp_x dummy
+scoreboard objectives add repo.lerp_y dummy
+scoreboard objectives add repo.lerp_z dummy
+scoreboard objectives add repo.temp_x dummy
+scoreboard objectives add repo.temp_y dummy
+scoreboard objectives add repo.temp_z dummy
+scoreboard objectives add repo.reverse_progress dummy
+scoreboard objectives add repo.start_x dummy
+scoreboard objectives add repo.start_y dummy
+scoreboard objectives add repo.start_z dummy
+scoreboard objectives add repo.mid_x dummy
+scoreboard objectives add repo.mid_y dummy
+scoreboard objectives add repo.mid_z dummy
+scoreboard objectives add repo.end_x dummy
+scoreboard objectives add repo.end_y dummy
+scoreboard objectives add repo.end_z dummy
+scoreboard objectives add repo.curve_x dummy
+scoreboard objectives add repo.curve_y dummy
+scoreboard objectives add repo.curve_z dummy
+scoreboard objectives add repo.t dummy
+scoreboard objectives add repo.t_inv dummy
+scoreboard objectives add repo.t_sq dummy
+scoreboard objectives add repo.t_inv_sq dummy
+scoreboard objectives add repo.t_mix dummy
+scoreboard objectives add repo.temp_mid_x dummy
+scoreboard objectives add repo.temp_mid_y dummy
+scoreboard objectives add repo.temp_mid_z dummy
+scoreboard objectives add repo.temp_end_x dummy
+scoreboard objectives add repo.temp_end_y dummy
+scoreboard objectives add repo.temp_end_z dummy
+scoreboard objectives add repo.curve_start_x dummy
+scoreboard objectives add repo.curve_start_y dummy
+scoreboard objectives add repo.curve_start_z dummy
+scoreboard objectives add repo.curve_progress dummy
+scoreboard objectives add repo.curve_inv dummy
+scoreboard objectives add repo.final_x dummy
+scoreboard objectives add repo.final_y dummy
+scoreboard objectives add repo.final_z dummy
+scoreboard objectives add repo.temp_item_x dummy
+scoreboard objectives add repo.temp_item_y dummy
+scoreboard objectives add repo.temp_item_z dummy
+scoreboard players set #30 repo.temp 30
+scoreboard players set #2 repo.temp 2
+scoreboard objectives add repo.step_distance dummy
+scoreboard objectives add repo.straight_end_x dummy
+scoreboard objectives add repo.straight_end_y dummy
+scoreboard objectives add repo.straight_end_z dummy
+scoreboard objectives add repo.curve_t dummy
+scoreboard objectives add repo.curve_t_inv dummy
+scoreboard objectives add repo.curve_pos_x dummy
+scoreboard objectives add repo.curve_pos_y dummy
+scoreboard objectives add repo.curve_pos_z dummy
+scoreboard objectives add repo.item_contrib_x dummy
+scoreboard objectives add repo.item_contrib_y dummy
+scoreboard objectives add repo.item_contrib_z dummy
+scoreboard objectives add repo.particle_step dummy
+scoreboard objectives add repo.distance_cm dummy
+scoreboard objectives add repo.curve_remaining dummy
+scoreboard objectives add repo.final_pos_x dummy
+scoreboard objectives add repo.final_pos_y dummy
+scoreboard objectives add repo.final_pos_z dummy
+scoreboard objectives add repo.target_contrib_x dummy
+scoreboard objectives add repo.target_contrib_y dummy
+scoreboard objectives add repo.target_contrib_z dummy
+scoreboard players set #10 repo.temp 10
+scoreboard players set #40 repo.temp 40
+scoreboard players set #3600 repo.temp 3600
+scoreboard objectives add repo.tether_step dummy
 
 tellraw @a [{"text":"[R.E.P.O.] ","color":"gold","bold":true},{"text":"Multi-player datapack loaded! Put carrot on stick in OFFHAND and right-click to grab objects. Multiple players can now hold the same item!","color":"white","bold":false}]

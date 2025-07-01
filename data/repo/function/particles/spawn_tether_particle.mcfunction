@@ -1,0 +1,1 @@
+$execute positioned ^ ^ ^$(distance) run particle minecraft:wax_on ~ ~ ~ 0.02 0.02 0.02 0 1 force @a

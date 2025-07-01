@@ -1,0 +1,2 @@
+$execute facing entity @e[tag=repo.target_pos,limit=1] feet positioned ^ ^ ^0.$(progress) run particle minecraft:electric_spark ~ ~ ~ 0 0 0 0 1 force @a
+$execute facing entity @e[tag=repo.target_pos,limit=1] feet positioned ^ ^ ^0.$(progress) run particle minecraft:wax_on ~ ~ ~ 0.02 0.02 0.02 0 1 force @a
