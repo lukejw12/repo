@@ -5,7 +5,6 @@ execute as @e[tag=repo.extraction_zone,limit=1,sort=nearest] run scoreboard play
 particle minecraft:happy_villager ~ ~0.5 ~ 0.2 0.2 0.2 0 5 force @a
 playsound minecraft:entity.experience_orb.pickup master @a[distance=..10] ~ ~ ~ 0.5 1.5
 
-tellraw @a[distance=..10] [{"text":"[R.E.P.O.] ","color":"gold"},{"text":"Extracted ","color":"green"},{"score":{"name":"@s","objective":"repo.current_value"},"color":"yellow"},{"text":" value!","color":"green"}]
 
 execute store result score @s repo.temp2 run scoreboard players get @s repo.holder
 execute as @a store result score @s repo.temp3 run data get entity @s UUID[0]

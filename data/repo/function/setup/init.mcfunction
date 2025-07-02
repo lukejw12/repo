@@ -32,6 +32,8 @@ scoreboard objectives add repo.temp dummy
 scoreboard objectives add repo.temp2 dummy
 scoreboard objectives add repo.temp3 dummy
 scoreboard objectives add repo.temp4 dummy
+scoreboard objectives add repo.temp5 dummy
+scoreboard objectives add repo.temp6 dummy
 scoreboard objectives add repo.attack minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add repo.distance_offset dummy
 scoreboard objectives add repo.selected_slot dummy
@@ -186,4 +188,37 @@ scoreboard players set #40 repo.temp 40
 scoreboard players set #3600 repo.temp 3600
 scoreboard objectives add repo.tether_step dummy
 
+
+scoreboard objectives add repo.velocity_x dummy
+scoreboard objectives add repo.velocity_z dummy
+scoreboard objectives add repo.total_velocity dummy
+scoreboard objectives add repo.prev_velocity dummy
+scoreboard objectives add repo.velocity_drop dummy
+scoreboard players set #-1 repo.temp -1
+scoreboard players set #200 repo.temp 200
+scoreboard players set #50 repo.temp 50
+scoreboard objectives add repo.velocity_y dummy
+scoreboard objectives add repo.wall_velocity dummy
+scoreboard players set #20 repo.temp 20
+scoreboard players set #600 repo.temp 600
+scoreboard players set #300 repo.temp 300
+scoreboard players set #150 repo.temp 150
+scoreboard objectives add repo.near_block dummy
+scoreboard objectives add repo.drop_percentage dummy
+scoreboard objectives add repo.wall_found dummy
+scoreboard objectives add repo.prev_velocity_y dummy
+scoreboard objectives add repo.velocity_drop_y dummy
+scoreboard objectives add repo.floor_found dummy
+scoreboard objectives add repo.debug_x dummy
+scoreboard objectives add repo.debug_y dummy
+scoreboard objectives add repo.debug_z dummy
+scoreboard objectives add repo.near_ground dummy
+scoreboard objectives add repo.near_wall dummy
+
+scoreboard objectives add repo.extraction_id dummy
+scoreboard players set #100000 repo.temp 100000
+scoreboard objectives add repo.activation_timer dummy
+scoreboard objectives add repo.final_extraction_timer dummy
+scoreboard objectives add repo.interruption_timer dummy
+scoreboard objectives add repo.completion_timer dummy
 tellraw @a [{"text":"[R.E.P.O.] ","color":"gold","bold":true},{"text":"Multi-player datapack loaded! Put carrot on stick in OFFHAND and right-click to grab objects. Multiple players can now hold the same item!","color":"white","bold":false}]

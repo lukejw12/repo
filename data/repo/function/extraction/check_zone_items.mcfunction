@@ -1,9 +1,5 @@
+function repo:extraction/check_quota_interruption
 
-scoreboard players set @s repo.temp 0
+execute if score @s repo.temp >= @s repo.quota unless entity @s[tag=repo.quota_complete_sequence] unless entity @s[tag=repo.quota_interrupted] run function repo:extraction/start_completion_sequence
 
-execute as @e[tag=repo.object,distance=..2.1] run scoreboard players operation @e[tag=repo.extraction_zone,limit=1,sort=nearest] repo.temp += @s repo.current_value
-
-execute if score @s repo.temp >= @s repo.quota run function repo:extraction/extract_all_items
-
-scoreboard players operation @s repo.collected_value = @s repo.temp
 function repo:extraction/update_zone_display

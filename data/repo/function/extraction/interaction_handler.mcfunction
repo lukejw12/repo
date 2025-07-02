@@ -1,0 +1,1 @@
+execute as @e[tag=repo.extraction_interaction] at @s run function repo:extraction/handle_interaction_click

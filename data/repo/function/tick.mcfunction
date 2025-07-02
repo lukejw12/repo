@@ -4,6 +4,11 @@ execute as @a run function repo:input/check_scroll
 
 execute as @a[tag=repo.holding] at @s run function repo:input/check_still_holding
 execute as @e[tag=repo.extraction_zone] at @s run function repo:extraction/check_zone_items
+execute as @e[tag=repo.quota_complete_sequence] at @s run function repo:extraction/handle_completion_sequence
+execute as @e[tag=repo.final_extraction] at @s run function repo:extraction/handle_final_extraction
+execute as @e[tag=repo.quota_interrupted] at @s run function repo:extraction/handle_interruption_timer
+execute as @e[scores={repo.activation_timer=1..}] at @s run function repo:extraction/handle_activation_timer
+function repo:extraction/interaction_handler
 execute as @e[tag=repo.object] run function repo:physics/main_physics
 execute as @e[tag=repo.held_by] run function repo:movement/follow_player
 execute as @e[tag=repo.object] run function repo:damage/check_collision

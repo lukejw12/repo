@@ -1,0 +1,1 @@
+execute as @e[tag=repo.completed_extraction] at @s as @e[tag=repo.extraction_display,distance=..3] run kill @s

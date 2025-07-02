@@ -1,0 +1,1 @@
+execute unless entity @e[tag=repo.extraction_zone,tag=!repo.locked_extraction,tag=!repo.ready_extraction] run function repo:extraction/activate_ready_zones
