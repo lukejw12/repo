@@ -215,6 +215,8 @@ scoreboard objectives add repo.debug_z dummy
 scoreboard objectives add repo.near_ground dummy
 scoreboard objectives add repo.near_wall dummy
 
+scoreboard objectives add repo.temp_interaction_id dummy
+scoreboard objectives add repo.direction dummy
 scoreboard objectives add repo.extraction_id dummy
 scoreboard players set #100000 repo.temp 100000
 scoreboard objectives add repo.activation_timer dummy
