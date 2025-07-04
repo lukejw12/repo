@@ -1,3 +1,4 @@
+#base object spawning and damging
 scoreboard objectives add repo.coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add repo.timer dummy
 scoreboard objectives add repo.strength dummy
@@ -41,6 +42,7 @@ scoreboard objectives add repo.prev_slot dummy
 scoreboard objectives add repo.quota dummy
 scoreboard objectives add repo.collected_value dummy
 
+# more multiplayer jank
 scoreboard objectives add repo.holder_2 dummy
 scoreboard objectives add repo.holder_3 dummy
 scoreboard objectives add repo.holder_4 dummy
@@ -56,6 +58,7 @@ scoreboard objectives add repo.movement_cooldown dummy
 scoreboard objectives add repo.last_tick dummy
 scoreboard objectives add repo.current_tick dummy
 
+#constants
 scoreboard players set #60 repo.temp 60
 scoreboard players set #10000 repo.temp 10000
 scoreboard players set #3 repo.temp 3
@@ -64,6 +67,7 @@ scoreboard players set @a repo.strength 15
 scoreboard players set #100 repo.temp 100
 scoreboard players set #1000 repo.temp 1000
 
+# multiplayer handling
 scoreboard objectives add repo.current_player_uuid dummy
 scoreboard objectives add repo.check_uuid dummy
 scoreboard objectives add repo.endpoint_x dummy
@@ -95,6 +99,7 @@ scoreboard objectives add repo.player1_end_x dummy
 scoreboard objectives add repo.player1_end_z dummy
 scoreboard objectives add repo.already_holding dummy
 
+# raycast and item handling
 scoreboard objectives add repo.step_progress dummy
 scoreboard objectives add repo.progress dummy
 scoreboard objectives add repo.current_x dummy
@@ -188,7 +193,7 @@ scoreboard players set #40 repo.temp 40
 scoreboard players set #3600 repo.temp 3600
 scoreboard objectives add repo.tether_step dummy
 
-
+# item physics
 scoreboard objectives add repo.velocity_x dummy
 scoreboard objectives add repo.velocity_z dummy
 scoreboard objectives add repo.total_velocity dummy
@@ -215,6 +220,8 @@ scoreboard objectives add repo.debug_z dummy
 scoreboard objectives add repo.near_ground dummy
 scoreboard objectives add repo.near_wall dummy
 
+# extraction zone
+scoreboard objectives add repo.surplus_timer dummy
 scoreboard objectives add repo.temp_interaction_id dummy
 scoreboard objectives add repo.direction dummy
 scoreboard objectives add repo.extraction_id dummy
@@ -223,4 +230,18 @@ scoreboard objectives add repo.activation_timer dummy
 scoreboard objectives add repo.final_extraction_timer dummy
 scoreboard objectives add repo.interruption_timer dummy
 scoreboard objectives add repo.completion_timer dummy
+
+# stamina
+scoreboard objectives add repo.is_actually_sprinting dummy
+scoreboard objectives add repo.is_moving dummy
+scoreboard objectives add repo.temp_x dummy
+scoreboard objectives add repo.temp_z dummy
+scoreboard objectives add repo.stamina dummy
+scoreboard objectives add repo.is_sprinting minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add repo.stamina_regen_timer dummy
+scoreboard objectives add repo.stamina_drain_timer dummy
+scoreboard objectives add repo.prev_x dummy
+scoreboard objectives add repo.prev_z dummy
+scoreboard players set @a repo.stamina 100
 tellraw @a [{"text":"[R.E.P.O.] ","color":"gold","bold":true},{"text":"Multi-player datapack loaded! Put carrot on stick in OFFHAND and right-click to grab objects. Multiple players can now hold the same item!","color":"white","bold":false}]
+gamerule naturalRegeneration false

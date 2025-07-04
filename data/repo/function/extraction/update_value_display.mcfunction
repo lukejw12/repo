@@ -1,0 +1,2 @@
+execute unless score @s repo.surplus_timer matches 1.. unless score @s repo.surplus_timer matches -999.. store result storage repo:temp value_amount int 1 run scoreboard players get @s repo.collected_value
+execute unless score @s repo.surplus_timer matches 1.. unless score @s repo.surplus_timer matches -999.. run function repo:extraction/set_value_display_text with storage repo:temp

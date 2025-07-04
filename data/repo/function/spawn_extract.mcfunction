@@ -1,7 +1,7 @@
 execute store result score #extraction_id repo.temp run time query gametime
 scoreboard players operation #extraction_id repo.temp %= #100000 repo.temp
 
-execute align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~ ~ ~ {Invisible:1b,NoGravity:1b,Marker:1b,Tags:["repo.extraction_zone","repo.new_extraction"],CustomName:[{"text":"Extraction Zone 0/0 (0%)","color":"gold","bold":true}],CustomNameVisible:1b}
+execute align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~ ~ ~ {Invisible:1b,NoGravity:1b,Marker:1b,Tags:["repo.extraction_zone","repo.new_extraction"],CustomName:[{"text":"","color":"gold","bold":true}],CustomNameVisible:0b}
 
 $scoreboard players set @e[tag=repo.new_extraction,limit=1] repo.direction $(direction)
 
@@ -33,7 +33,7 @@ execute if entity @e[tag=repo.extraction_zone,tag=!repo.new_extraction] run tag 
 execute if entity @e[tag=repo.extraction_zone,tag=!repo.new_extraction] as @e[tag=repo.new_extraction,limit=1] at @s run fill ~1 ~ ~1 ~-1 ~3 ~-1 minecraft:barrier replace #repo:passable
 
 execute unless entity @e[tag=repo.extraction_zone,tag=!repo.new_extraction] run scoreboard players set @e[tag=repo.new_extraction,limit=1] repo.activation_timer 60
-
+execute as @e[tag=repo.new_extraction,limit=1] at @s run function repo:extraction/spawn_value_display
 tag @e[tag=repo.new_extraction] remove repo.new_extraction
 tag @e[tag=repo.new_cover] remove repo.new_cover
 tag @e[tag=repo.new_display] remove repo.new_display

@@ -1,0 +1,1 @@
+execute as @e[tag=repo.value_display] if score @s repo.extraction_id = @s repo.extraction_id run kill @s

@@ -15,4 +15,5 @@ execute store result storage repo:display collected int 1 run scoreboard players
 execute store result storage repo:display quota int 1 run scoreboard players get @s repo.quota
 execute store result storage repo:display percentage int 1 run scoreboard players get @s repo.temp2
 
-function repo:extraction/set_display_name with storage repo:display
+#function repo:extraction/set_display_name with storage repo:display
+function repo:extraction/update_value_display

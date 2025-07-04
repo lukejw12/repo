@@ -1,5 +1,4 @@
 
-execute as @e[tag=repo.locked_extraction] at @s run fill ~1 ~ ~1 ~-1 ~3 ~-1 minecraft:air
 
 execute as @e[tag=repo.locked_extraction] run tag @s add repo.ready_extraction
 execute as @e[tag=repo.locked_extraction] run tag @s remove repo.locked_extraction

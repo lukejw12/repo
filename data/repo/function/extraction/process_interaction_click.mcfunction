@@ -1,10 +1,6 @@
-tellraw @a [{"text":"Processing interaction click","color":"yellow"}]
 execute store result score #clicked_id repo.temp run scoreboard players get @s repo.extraction_id
-tellraw @a [{"text":"Clicked ID: "},{"score":{"name":"#clicked_id","objective":"repo.temp"},"color":"white"}]
 
-execute as @e[tag=repo.ready_extraction] run tellraw @a [{"text":"Ready extraction ID: "},{"score":{"name":"@s","objective":"repo.extraction_id"},"color":"aqua"}]
 
-execute as @e[tag=repo.ready_extraction] if score @s repo.extraction_id = #clicked_id repo.temp run tellraw @a [{"text":"Found matching extraction! Activating...","color":"green"}]
 execute as @e[tag=repo.ready_extraction] if score @s repo.extraction_id = #clicked_id repo.temp run function repo:extraction/activate_extraction_zone
 execute as @e[tag=repo.ready_extraction] if score @s repo.extraction_id = #clicked_id repo.temp run tag @s remove repo.ready_extraction
 

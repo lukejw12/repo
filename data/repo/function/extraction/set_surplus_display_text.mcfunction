@@ -1,0 +1,1 @@
+$execute as @e[tag=repo.value_display] if score @s repo.extraction_id = @e[tag=repo.extraction_zone,limit=1,sort=nearest] repo.extraction_id run data modify entity @s CustomName set value {text:"$$(surplus_amount)",color:"green"}

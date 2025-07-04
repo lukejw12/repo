@@ -1,2 +1,3 @@
 execute as @e[tag=repo.extraction_display] if score @s repo.extraction_id = @e[tag=repo.extraction_zone,limit=1,sort=nearest] repo.extraction_id run item replace entity @s contents with carved_pumpkin[item_model="repo:extraction_zone/numbers/extraction_zone_2"]
 playsound minecraft:block.note_block.pling master @a[distance=..20] ~ ~ ~ 1 1
+function repo:extraction/clear_value_display

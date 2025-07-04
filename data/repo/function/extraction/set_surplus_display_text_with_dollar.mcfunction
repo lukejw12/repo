@@ -1,0 +1,1 @@
+$execute as @e[tag=repo.value_display,scores={repo.extraction_id=$(extraction_id)}] run data modify entity @s CustomName set value {text:"$$(surplus_amount)",color:"green"}
